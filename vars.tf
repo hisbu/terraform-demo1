@@ -17,7 +17,7 @@ variable "AWS_SECRET_KEY" {
 variable "AWS_REGION" {
   type = string
   description = "region for aws resource"
-  default = "ap-southeast-1"
+  default = "us-east-1"
 }
 
 variable "AWS_AMIS" {
@@ -36,3 +36,15 @@ variable "AWS_INSTANCE_TYPE" {
   default = "t2.micro"
 }
 
+variable "PATH_TO_PRIVATE_KEY" {
+  default = "mykey"
+}
+
+variable "PATH_TO_PUBLIC_KEY" {
+  default = "mykey.pub"
+}
+
+variable "INSTANCE_USERNAME" {
+  type = string
+  default = "ubuntu"
+}
